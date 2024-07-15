@@ -1,0 +1,108 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+.container {
+    size: 200px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 150%;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #343a40;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#expenses-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ced4da;
+    transition: background-color 0.3s ease;
+}
+
+.expense-item:hover {
+    background-color: #f1f1f1;
+}
+
+.expense-item button {
+    background-color: #dc3545;
+    border: none;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.expense-item button:hover {
+    background-color: #c82333;
+}
+
+.edit-button {
+    background-color: #ffc107;
+    margin-right: 10px;
+}
+
+.edit-button:hover {
+    background-color: #e0a800;
+}
